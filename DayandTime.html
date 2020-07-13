@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day And Time</title>
+    
+</head>
+<body>
+    <h1>Welcome to my LetsUpgrade Assignment 1 first program</h1>
+    <p></p>
+    <p></p>
+    <script>
+        
+        var day = new Date().getDay();
+        var h = new Date().getHours();
+        var hm = h >= 12 ? 'PM' : 'AM';
+            h = h % 12;
+            h = h ? h : 12;
+        var m = new Date().getMinutes();
+        var s = new Date().getSeconds();
+        
+
+        document.getElementsByTagName("p")[1].innerHTML="Current Time is : "+h+" "+hm+" : "+m+" : "+s;
+        switch(day){
+            case 1:
+            document.getElementsByTagName("p")[0].innerHTML="Today is : Monday.";           
+            break;
+            case 2:
+            document.getElementsByTagName("p")[0].innerHTML="Today is : Tuesday.";
+            break;
+            case 3:
+            document.getElementsByTagName("p")[0].innerHTML="Today is : Wednesday.";
+            break;
+            case 4:
+            document.getElementsByTagName("p")[0].innerHTML="Today is : Thursday.";
+            break;
+            case 5:
+            document.getElementsByTagName("p")[0].innerHTML="Today is : Friday.";
+            break;
+            case 6:
+            document.getElementsByTagName("p")[0].innerHTML="Today is : Saturday.";
+            break;
+            case 7:
+            document.getElementsByTagName("p")[0].innerHTML="Today is : Sunday.";
+            break;
+            default:
+            break;
+        }
+        
+    </script>
+</body>
+</html>
