@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var Let Const</title>
+</head>
+<body>
+    <h1>Explain the var let and const key in JS</h1>
+
+    <script>
+        // Variables declared Globally (outside any function) have Global Scope.
+        
+var name = "Nikesh"; 
+// Number
+var age = 24;
+// Boolean
+var drink = false;
+// Array
+var languages = ['Hindi','English','Tamil', 'Kannada'];
+// Objects
+var friends = {
+    name:"Rahul",
+    hobby:"Coding",
+}
+
+var a = 10;
+console.log(a);
+
+var a = null;
+console.log(a)
+
+        //  let : declared inside a block {} cannot be accessed from outside the block:
+{
+   let city;
+   let name = "Rahul Solanki"; 
+   name = "Thecha";
+   console.log("Using Let: ", name);
+}
+console.log(name)
+        
+        //const behave like let variables, except they cannot be reassigned:
+
+        const _fruits = ["mango", "apple"]
+console.log(_fruits)
+_fruits.push('banana');
+console.log(_fruits)
+
+    </script>
+</body>
+</html>

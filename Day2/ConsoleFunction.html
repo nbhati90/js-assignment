@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Function</title>
+</head>
+<body>
+    <h1>Displaying various console method</h1>
+
+    <script>
+        console.group("grouping");
+        console.time();
+        console.log("Nikesh Bhati"); 
+        console.error("This is a simple error");
+        console.warn("This is a warning."); 
+       // console.clear(); 
+       console.timeEnd();
+       console.groupEnd("grouping");
+       console.table({name:"Nikesh", lastname: "Bhati", hobby:"Coding"});
+    </script>
+</body>
+</html>
