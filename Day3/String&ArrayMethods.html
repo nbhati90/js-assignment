@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String & Array Methods</title>
+</head>
+<body>
+    <h1>Day 3 Assignment 2st Question of String and Array Methods in JS</h1>
+
+    <script>
+
+        // String Methods
+        var name ="Nikesh Bhati is a developer and Nikesh is a teacher as well";
+        console.log(name.length);
+        console.log(name.indexOf("is"));
+        console.log(name.lastIndexOf("is"));
+        console.log(name.search("a"));
+        console.log(name.slice(8,15));
+        console.log(name.substring(10,15));
+        console.log(name.substr(20));
+        console.log(name.replace("Nikesh", "Manish"));
+        console.log(name.toUpperCase());
+        console.log(name.toLowerCase());
+
+        var firstname="Nikesh";
+        var lastname = "Bhati";
+        console.log(firstname.concat(lastname));
+
+        var a ="   My Name     ";
+        console.log(a);
+        console.log(a.trim());
+
+        console.log(name.charAt(9));
+        console.log(name.charCodeAt(9));
+        console.log(name.split(" "));
+
+        //Array Methods
+
+        var language = ["Hindi", "English", "Tamil", "Telugu"];
+        console.log(language);
+        language.push("Kannada","Marathi");
+        console.log(language);
+        console.log(language.pop());
+        console.log(language.shift());
+        console.log(language.unshift("Bengali"));
+        console.log(language);
+        console.log(language.slice(1,4));
+        console.log(language.splice(0,1));
+    </script>
+</body>
+</html>
