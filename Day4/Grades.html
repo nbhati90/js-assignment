@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Grades</title>
+</head>
+<body>
+    <h1>Write a program to take marks as input from the user and grade him accordingly. Use Conditional
+        statements. Also the same code using switch or ternary
+    </h1>
+
+    <script>
+        var marks=prompt("Enter the marks so I tell you what is your grade");
+
+        // IF Else Condition
+         if(marks>=60 && marks<=100)
+        console.log(" Marks are "+marks+" and grade is A");
+        else if(marks>=55 && marks<=59)
+        console.log(" Marks are "+marks+" and grade is B+");
+        else if(marks>=50 && marks<=54)
+        console.log(" Marks are "+marks+" and grade is B");
+        else if(marks>=43 && marks<=49)
+        console.log(" Marks are "+marks+" and grade is C+");
+        else if(marks>=35 && marks<=42)
+        console.log(" Marks are "+marks+" and grade is C");
+        else
+        console.log(" Marks are "+marks+" and grade is Fail");
+
+        //Switch Condition
+         switch(true){
+        case marks>=60:
+        console.log(" Marks are "+marks+" and grade is A");
+        break;
+        case marks>=55:
+        console.log(" Marks are "+marks+" and grade is B+");
+        break;
+        case marks>=50:
+        console.log(" Marks are "+marks+" and grade is B");
+        break;
+        case marks>=43:
+        console.log(" Marks are "+marks+" and grade is C+");
+        break;
+        case marks>=35:
+        console.log(" Marks are "+marks+" and grade is C");
+        break;
+        default:
+        console.log(" Marks are "+marks+" and grade is Fail");
+        break;
+         }
+    </script>
+</body>
+</html>
