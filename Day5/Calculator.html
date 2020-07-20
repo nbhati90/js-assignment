@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Make a Calculator in Javascript which can do operations as Addtion, Subtraction, Multiplication, Division,
+        Square root, Percentage
+    </h1>
+
+    <script>
+        
+        var a = parseInt(prompt("Enter the a value"));
+        var b =  parseInt(prompt("Enter the b value"));
+       
+        console.log("Addition : "+(a+b));
+        console.log("Subtraction:"+(a-b));
+        console.log("Multiplication:"+(a*b));
+        console.log("Divition:"+(a/b));
+        console.log("Square root of a:"+(Math.sqrt(a)));
+        console.log("Square root of a:"+(Math.sqrt(b)));
+        console.log("Percantage : "+Percentage(a,b)+"%");
+
+        function Percentage(x,y) {
+	    return (x/y) * 100 ;
+       
+}
+    </script>
+</body>
+</html>
