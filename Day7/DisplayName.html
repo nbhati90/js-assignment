@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Name</title>
+    <style>
+    .body{
+        background-color:black;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <h5><u>Question:</u> Make a webpage that will ask the name of the user. Then will display a welcome message on the
+        webpage. Also the webpage should also have a clock.
+        Using the toggle method of classList add a dark mode feature to the website.
+    </h5>
+
+    <h1></h1>
+
+    <h4 id="time"></h4>
+    <script>
+        let name = prompt("What is your name ?");
+            document.getElementsByTagName("h1")[0].innerHTML = "Welcome to my Webpage Mr. " + name;
+
+            const ctime = document.getElementById('time');
+            function clock() {
+                let date = new Date();
+                let time = date.toLocaleTimeString();
+                ctime.innerText = "Current Time is "+time;
+                document.body.classList.toggle("body");
+            }
+            setInterval(clock,5000);
+    </script>
+</body>
+</html>

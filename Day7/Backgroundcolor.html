@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color</title>
+</head>
+<body>
+    <h1>Write a program that will iterate over an array of colors and change the background of the page
+        after 5 seconds.
+    </h1>
+
+    <script>
+        let colors=['red','green','blue','yellow','orange','brown'];
+        var i=0;
+        function clock(){
+        document.body.style.backgroundColor=colors[i];
+        i++;
+        if(i==colors.length)
+        i=0;
+        }
+        setInterval(clock,5000);
+    </script>
+</body>
+</html>
