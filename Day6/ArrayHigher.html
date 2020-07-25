@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Higher Function</title>
+</head>
+<body>
+    <h1>Write a program which does the following things:</h1>
+       <p> 1. Takes a positive number from the user.</p>
+       <p> 2. Makes an array of numbers till the number given by user</p>
+       <p> 3. Use higher order function to filter the odd numbers</p>
+       <p> 4. Generate and array of the cubes of the filtered numbers</p>
+
+       <script>
+           var moreNumber=true;
+           var userNumber=[];
+           while(moreNumber!=false)
+           {
+               var input=prompt("Enter the positive numbers")
+               if(input<0) 
+            continue;
+               userNumber.push(input);
+               moreNumber=confirm("You want to enter more number click ok otherwise click Cancel");
+            }
+            console.log(userNumber);
+
+            let oddNumber = userNumber.filter(el=>el%2!=0).map(el=>el**3);
+            console.log(oddNumber);
+       </script>
+</body>
+</html>
