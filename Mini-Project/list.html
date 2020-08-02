@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+</head>
+<body>
+    <div>
+
+        <p>Enter a Name:</p> <input type="name" id="name">
+        <p>Enter a Age:</p> <input type="number" id="num">
+        <br>
+
+        <button id="store">Add</button>
+        <button id="remove">Remove</button>
+        <!-- <button id="get">Get</button> -->
+    </div>
+
+        <script>
+                document.getElementById('store').addEventListener('click',function(){
+                    localStorage.setItem('name',document.getElementById("name").value);
+                    localStorage.setItem('age',document.getElementById("num").value);
+                });
+
+             /* $('#get').click(function(){
+                    alert('Name :' +localStorage.getItem('name')+ '      Age :   '+localStorage.getItem('age'));
+                });*/
+                document.getElementById('remove').addEventListener('click',function remove(){
+                    localStorage.removeItem('name');
+                });
+        
+        
+        </script>
+</body>
+</html>
